@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 
 ## 📚 Datasets
-Our data is from *The Well* datasets — *Turbulent Radiative Layer*, *Active Matter*, *Viscoelastic Instability*, *Rayleigh–Bénard* — collected by PolymathicAI (https://github.com/PolymathicAI/the_well).
+Our data is from [*The Well*](https://github.com/PolymathicAI/the_well) datasets — *Turbulent Radiative Layer*, *Active Matter*, *Viscoelastic Instability*, *Rayleigh–Bénard* — collected by PolymathicAI.
 Follow their repo to download raw files, then organise them as:
 
 ```angular2html
@@ -46,6 +46,8 @@ Then set ```root_path``` in ```configs/<model>.yaml``` accordingly.
 python train.py --config-name=<model_name>
 ```
 Logs → ```output/```, Checkpoints → ```experiments/<experiment>/```.
+
+> Our repository also provides a PyTorch implementation of [Continuous Vision Transformer](https://github.com/PredictiveIntelligenceLab/cvit) (CViT), adapted from its original JAX codebase to broaden accessibility and adoption.
 
 ## 🔎 Evaluation
 ```angular2html
