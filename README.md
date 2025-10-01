@@ -56,12 +56,12 @@ python eval.py --config-name=<model_name>
 
 ## 🏆 Main Results
 
-<p align="center"> <img src="docs/tante_viz.png" width="90%"> </p>
+<p align="center"> <img src="docs/tante_viz.png" width="99%"> </p>
 
 > *Representative TANTE rollout predictions across four benchmarks.* Each benchmark's results are shown in three rows: the first row displays the ground truth field (reference), the second row shows the predictions from TANTE, and the third row illustrates the point-wise absolute error between the predictions and the ground truth. **Left:** $Buoyancy$ field in the *Rayleigh-Bénard convection (RB)* benchmark across eight time steps. **Top Right** $Velocity$ field (y-direction) in the *Active Matter (AM)* benchmark across sixteen time steps. **Middle Right:** $C_{xx}$ field in the *Viscoelastic Instability fluids (VF)* benchmark across sixteen time steps. **Bottom Right:** $Density$ field in the *Turbulent Radiative Layer (TR)* benchmark across fourteen time steps.
 
 
-<p align="center"> <img src="docs/compare.png" width="90%"> </p>
+<p align="center"> <img src="docs/compare.png" width="99%"> </p>
 
 > Predictions of the target field at $t=4$ time step on the four benchmarks. For each dataset, we show one representative sample comparing our approach with the best performance against several competitive baselines with top accuracy.
 
