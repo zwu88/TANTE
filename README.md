@@ -49,7 +49,7 @@ python train.py --config-name=<model_name>
 ```
 Logs → ```output/```, Checkpoints → ```experiments/<experiment>/```.
 
-> Our repository also provides a PyTorch implementation of [Continuous Vision Transformer (CViT)](https://github.com/PredictiveIntelligenceLab/cvit), adapted from its original JAX codebase to broaden accessibility and adoption.
+> Our repository also provides a **PyTorch** implementation of *Continuous Vision Transformer* [(CViT)](https://github.com/PredictiveIntelligenceLab/cvit), adapted from its original **JAX** codebase to broaden accessibility and adoption.
 
 ## 🔎 Evaluation
 ```angular2html
