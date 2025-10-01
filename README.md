@@ -58,4 +58,5 @@ python eval.py --config-name=<model_name>
 
 <p align="center"> <img src="docs/table.png" width="90%"> </p>
 
-> L2RE (↓ lower is better) of rollouts on $T'$ time points on four benchmarks (*TR*, *AM*, *VF*, and *RB*). Results are divided into three parts based on different model sizes. In each part, the best results are **bolded** and the second-best results are **underlined**. We **highlight** the globally best results using **blue** and mark our TANTE models with **red font**.
+<p align="center"> <img src="docs/compare.png" width="90%"> </p>
+> Predictions of the target field at *t=4* time step on the four benchmarks. For each dataset, we show one representative sample comparing our approach with the best performance against several competitive baselines with top accuracy.
