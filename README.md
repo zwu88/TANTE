@@ -56,8 +56,8 @@ python eval.py --config-name=<model_name>
 
 ## 🏆 Main Results
 
-<p align="center"> <img src="docs/table.png" width="90%"> </p>
-
 <p align="center"> <img src="docs/compare.png" width="90%"> </p>
 
 > Predictions of the target field at *t=4* time step on the four benchmarks. For each dataset, we show one representative sample comparing our approach with the best performance against several competitive baselines with top accuracy.
+
+<p align="center"> <img src="docs/table.png" width="90%"> </p>
