@@ -52,11 +52,11 @@ Logs → ```output/```, Checkpoints → ```experiments/<experiment>/```.
 python eval.py --config-name=<model_name>
 ```
 
-```eval.py``` auto-loads the checkpoint specified by ```experiment``` in the config of ```<model_name>```; switch modes in ```eval.py``` to run rollout, error-vs-time curves, or other specific experiments in our paper.
+```eval.py``` auto-loads the checkpoint specified by ```experiment``` in the config of ```<model_name>```.
 
 ## 🏆 Main Results
 
 <p align="center"> <img src="docs/table.png" width="90%"> </p>
 
 <p align="center"> <img src="docs/compare.png" width="90%"> </p>
-> Predictions of the target field at *t=4* time step on the four benchmarks. For each dataset, we show one representative sample comparing our approach with the best performance against several competitive baselines with top accuracy.
+> Predictions of the target field at t=4 time step on the four benchmarks. For each dataset, we show one representative sample comparing our approach with the best performance against several competitive baselines with top accuracy.
