@@ -5,6 +5,8 @@
 
 > ***TANTE** is a new operator-learning framework for time-dependent PDEs that uses **neural Taylor expansion** to make accurate, **continuous-time** predictions with **adaptive step sizes**, improving both accuracy and efficiency over fixed-step methods.*
 
+This repository contains code accompanying the paper titled [TANTE: Time-Adaptive Operator Learning via Neural Taylor Expansion](https://arxiv.org/abs/2405.13998).
+
 ---
 ## 🧱 Pipeline
 
