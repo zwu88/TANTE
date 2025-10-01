@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 
 ## 📚 Datasets
-We rely on *The Well* datasets — *Turbulent Radiative Layer*, *Active Matter*, *Viscoelastic Instability*, *Rayleigh–Bénard* — collected by PolymathicAI (https://github.com/PolymathicAI/the_well).
+Our data is from *The Well* datasets — *Turbulent Radiative Layer*, *Active Matter*, *Viscoelastic Instability*, *Rayleigh–Bénard* — collected by PolymathicAI (https://github.com/PolymathicAI/the_well).
 Follow their repo to download raw files, then organise them as:
 
 ```angular2html
