@@ -1,0 +1,45 @@
+dataset_name: turbulent_radiative_layer_2D
+n_spatial_dims: 2
+spatial_resolution:
+- 128
+- 384
+scalar_names: []
+constant_scalar_names:
+- tcool
+field_names:
+  0:
+  - density
+  - pressure
+  1:
+  - velocity_x
+  - velocity_y
+  2: []
+constant_field_names:
+  0: []
+  1: []
+  2: []
+boundary_condition_types:
+- OPEN
+- PERIODIC
+n_files: 9
+n_trajectories_per_file:
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+- 1
+n_steps_per_trajectory:
+- 101
+- 101
+- 101
+- 101
+- 101
+- 101
+- 101
+- 101
+- 101
+grid_type: cartesian

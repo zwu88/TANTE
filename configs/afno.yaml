@@ -1,0 +1,62 @@
+seed: 211
+experiment: AFNO_AM
+root_path: /home/zw474/project/TANTE
+wandb_project_name: TANTE_AM
+
+data:
+  _target_: data.TanteDataModule
+  base_path: /home/zw474/project/TANTE_train/datasets
+  dataset_name: active_matter
+  batch_size: 4
+  include_filters: []
+  exclude_filters: []
+  n_steps_input: 4
+  n_steps_output: 4
+  eval_steps_output: 8
+  dt_stride: 1
+  world_size: 1
+  data_workers: 8
+  rank: 0
+
+model:
+  _target_: models.AFNO
+  in_T: 4
+  hidden_dim: 256
+  n_blocks: 8
+
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 5E-5
+  weight_decay: 1E-5
+
+lr_scheduler:
+  _target_: optim.schedulers.LinearWarmupCosineAnnealingLR
+  warmup_epochs: 2
+
+trainer:
+  _target_: trainer.Trainer
+  checkpoint_folder: 
+  formatter: channels_first_default
+  train_loss_fn: 
+    _target_: trainer.MSE
+  eval_loss_fn:
+    _target_: trainer.L2RE
+  max_epoch: 34
+  checkpoint_path: str = ""
+  n_steps_output: 4
+  n_steps_rollout: 8
+
+evaler:
+  _target_: trainer.Evaler
+  checkpoint_folder: 
+  formatter: channels_first_default
+  eval_loss_fn1:
+    _target_: trainer.MSE
+  eval_loss_fn2:
+    _target_: trainer.L2RE
+  eval_loss_fn3:
+    _target_: trainer.NNMSE
+  eval_loss_fn4:
+    _target_: trainer.VRMSE
+  checkpoint_path: ""
+  n_steps_rollout: 4

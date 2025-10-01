@@ -1,0 +1,15 @@
+torch
+torchinfo
+einops
+hydra-core
+omegaconf
+wandb
+numpy
+scipy
+matplotlib
+tqdm
+h5py
+fsspec
+PyYAML
+xarray
+typing_extensions

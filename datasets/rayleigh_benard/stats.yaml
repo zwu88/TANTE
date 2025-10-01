@@ -1,0 +1,36 @@
+mean:
+  buoyancy: 3.7085E-01
+  pressure: 7.8417E-03
+  velocity:
+  - 2.1672E-05
+  - 1.0063E-13
+mean_delta:
+  buoyancy: 5.2857E-04
+  pressure: 1.0872E-04
+  velocity:
+  - -4.2876E-07
+  - 3.3606E-15
+rms:
+  buoyancy: 4.4684E-01
+  pressure: 1.4953E-01
+  velocity:
+  - 2.0773E-01
+  - 1.7953E-01
+rms_delta:
+  buoyancy: 5.1374E-02
+  pressure: 2.6063E-02
+  velocity:
+  - 6.5650E-02
+  - 5.8977E-02
+std:
+  buoyancy: 2.4928E-01
+  pressure: 1.4932E-01
+  velocity:
+  - 2.0773E-01
+  - 1.7953E-01
+std_delta:
+  buoyancy: 5.1371E-02
+  pressure: 2.6063E-02
+  velocity:
+  - 6.5650E-02
+  - 5.8977E-02
