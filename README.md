@@ -8,18 +8,9 @@
 ---
 ## 🧱 Pipeline
 
-<p align="center"> <img src="docs/pipeline_full.jpg" width="88%"> </p>
+<p align="center"> <img src="docs/tante_pipeline.png" width="88%"> </p>
 
 > Time-Adaptive Transformer with Neural Taylor Expansion (TANTE). Our framework enables continuous-time prediction with dynamically adjusted step sizes based on local temporal complexity. TANTE generates forecasts by summing the predicted derivatives as a Taylor series within the confidence interval.
-
-To ensure that TANTE variants of different orders have comparable model sizes, we fix the **total number of transformer layers** so it remains constant across configurations.
-For instance, every TANTE-S model contains **eight layers in total**:
-
-* **TANTE-S-1**: a single transformer block with 8 layers.
-* **TANTE-S-2**: two transformer blocks, each with 4 layers (4 + 4).
-* **TANTE-S-3**: three transformer blocks allocated e.g. 3 + 3 + 2 layers, and so on.
-
-By redistributing the layers in this way, we keep the overall parameter count effectively aligned across all TANTE orders.
 
 
 ## 📦 Installation
@@ -65,6 +56,6 @@ python eval.py --config-name=<model_name>
 
 ## 🏆 Main Results
 
-<p align="center"> <img src="docs/table.jpg" width="90%"> </p>
+<p align="center"> <img src="docs/table.png" width="90%"> </p>
 
 > L2RE (↓ lower is better) of rollouts on $T'$ time points on four benchmarks (*TR*, *AM*, *VF*, and *RB*). Results are divided into three parts based on different model sizes. In each part, the best results are **bolded** and the second-best results are **underlined**. We **highlight** the globally best results using **blue** and mark our TANTE models with **red font**.
