@@ -1,7 +1,7 @@
 seed: 211
 experiment: DPOT_AM
 root_path: /home/zw474/project/TANTE
-wandb_project_name: TANTE_RB
+wandb_project_name: TANTE_AM
 
 data:
   _target_: data.TanteDataModule
