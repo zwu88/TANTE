@@ -136,8 +136,8 @@ class R_Evaler:
                 loss3 = self.eval_loss_fn3(y_pred, y_ref, None) 
                 loss4 = self.eval_loss_fn4(y_pred, y_ref, None) 
                 Seq_Loss1.append(loss1.mean().item())
-                Seq_Loss2.append(loss2.mean().item())
-                Seq_Loss3.append(loss3.mean().item())
+                Seq_Loss2.append(loss3.mean().item())
+                Seq_Loss3.append(loss2.mean().item())
                 Seq_Loss4.append(loss4.mean().item())
                 time_used.append(ftime)
                 rt_list.append(torch.mean(rts).item())
@@ -171,7 +171,7 @@ class R_Evaler:
                 'q3': np.percentile(data, 75),
                 'max': np.max(data)
             }
-        summary_error = get_five_number_summary(Seq_Loss3)
+        summary_error = get_five_number_summary(Seq_Loss2)
         summary_rt = get_five_number_summary(rt_list)
 
         return validation_loss, Std_error, RT, Step, time_used, summary_error, summary_rt
