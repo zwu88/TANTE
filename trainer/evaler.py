@@ -202,8 +202,8 @@ class Evaler:
                 
                 assert (y_ref.shape == y_pred.shape), f"Mismatching shapes between reference {y_ref.shape} and prediction {y_pred.shape}"
                 loss1 = self.eval_loss_fn1(y_pred, y_ref, None) 
-                loss2 = self.eval_loss_fn2(y_pred, y_ref, None) 
-                loss3 = self.eval_loss_fn3(y_pred, y_ref, None) 
+                loss2 = self.eval_loss_fn3(y_pred, y_ref, None) 
+                loss3 = self.eval_loss_fn2(y_pred, y_ref, None) 
                 loss4 = self.eval_loss_fn4(y_pred, y_ref, None) 
                 Seq_Loss1.append(loss1.mean().item())
                 Seq_Loss2.append(loss2.mean().item())
