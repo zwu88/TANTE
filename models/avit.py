@@ -1,5 +1,5 @@
 """
-Colleted by Zhikai Wu from:
+Collected by Zhikai Wu from:
 
     McCabe et al. 2024, Multiple Physics Pretraining for Spatiotemporal Surrogate Models
     Source: https://github.com/PolymathicAI/multiple_physics_pretraining
