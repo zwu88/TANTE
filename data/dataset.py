@@ -80,7 +80,7 @@ class TanteDataset(Dataset):
         storage_options: Optional[Dict] = None,
     ):
         super().__init__()
-        self.data_path = os.path.join(base_path, dataset_name, split_name)
+        self.data_path = os.path.join(base_path, dataset_name, "data", split_name)
         self.normalization_path = os.path.join(base_path, dataset_name, "stats.yaml")
         self.fs, _ = fsspec.url_to_fs(self.data_path, **(storage_options or {}))
         with self.fs.open(self.normalization_path, mode="r") as f:
