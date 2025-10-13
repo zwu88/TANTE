@@ -4,7 +4,7 @@ Translated by Zhikai Wu from:
     Wang et al. 2024, CViT: Continuous Vision Transformer for Operator Learning
     Source: https://github.com/PredictiveIntelligenceLab/cvit (Jax framework)
 
-If you use this implementation, please cite original work above.
+If you use this implementation, please cite this work and the original work above.
 """
 
 import torch
