@@ -12,6 +12,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 import statistics
+import einops
 from data.dataset import TanteMetadata
 
 class Metric(nn.Module):
@@ -103,10 +104,11 @@ class L2RE(Metric):
         y: torch.Tensor | np.ndarray,
         eps: float = 1e-7,
     ) -> torch.Tensor:
-        n_spatial_dims = tuple(range(-3, -1))  # (-3, -2) -> H, W
-        num = torch.linalg.vector_norm(x - y, dim=n_spatial_dims)
-        den = torch.linalg.vector_norm(y, dim=n_spatial_dims)
-        return num / (den + eps)
+        x = einops.rearrange(x, "B T H W C-> B (T H W) C")
+        y = einops.rearrange(y, "B T H W C-> B (T H W) C")
+        num = torch.linalg.vector_norm(x - y, dim=1)
+        den = torch.linalg.vector_norm(y, dim=1) + eps
+        return num / den
 
 
 class NNMSE(Metric):
