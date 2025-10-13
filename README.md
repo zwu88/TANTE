@@ -35,9 +35,10 @@ datasets/
 └─ active_matter/
    ├─ active_matter.yaml
    ├─ stats.yaml
-   ├─ train/   *.hdf5
-   ├─ valid/   *.hdf5
-   └─ test/    *.hdf5
+   └─ data/
+      ├─ train/   *.hdf5
+      ├─ valid/   *.hdf5
+      └─ test/    *.hdf5
 ```
 Then set ```root_path``` in ```configs/<model>.yaml``` accordingly.
 
