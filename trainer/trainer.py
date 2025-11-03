@@ -188,12 +188,9 @@ class Trainer:
                 assert (y_ref.shape == y_pred.shape), f"Mismatching shapes between reference {y_ref.shape} and prediction {y_pred.shape}"
                 loss = self.train_loss_fn(y_pred, y_ref, None).mean()
             
-            torch.cuda.empty_cache()
-            with torch.amp.autocast('cuda', enabled=True):
-                self.grad_scaler.scale(loss).backward(create_graph=False)
-
-            # self.grad_scaler.scale(loss).backward()
-
+            self.grad_scaler.scale(loss).backward()
+            self.grad_scaler.unscale_(self.optimizer)
+            torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)
             self.grad_scaler.step(self.optimizer)
             self.grad_scaler.update()
             self.optimizer.zero_grad()
