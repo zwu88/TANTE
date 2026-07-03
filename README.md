@@ -74,7 +74,7 @@ python eval.py --config-name=<model_name>
 
 ## Citation
 ```angular2html
-   @article{WU2026115041,
+@article{WU2026115041,
    title = {TANTE: Time-adaptive operator learning via neural Taylor expansion},
    journal = {Journal of Computational Physics},
    volume = {562},
@@ -85,5 +85,5 @@ python eval.py --config-name=<model_name>
    url = {https://www.sciencedirect.com/science/article/pii/S0021999126003943},
    author = {Zhikai Wu and Sifan Wang and Shiyang Zhang and Sizhuang He and Min Zhu and Anran Jiao and Lu Lu and David {van Dijk}},
    keywords = {Scientific machine learning, Operator learning, Partial differential equation, Adaptive step size, Taylor expansion},
-   }
+}
 ```
