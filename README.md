@@ -73,15 +73,15 @@ python eval.py --config-name=<model_name>
 <p align="center"> <img src="docs/table.png" width="99%"> </p>
 
 ## Citation
-@article{WU2026115041,
-title = {TANTE: Time-adaptive operator learning via neural Taylor expansion},
-journal = {Journal of Computational Physics},
-volume = {562},
-pages = {115041},
-year = {2026},
-issn = {0021-9991},
-doi = {https://doi.org/10.1016/j.jcp.2026.115041},
-url = {https://www.sciencedirect.com/science/article/pii/S0021999126003943},
-author = {Zhikai Wu and Sifan Wang and Shiyang Zhang and Sizhuang He and Min Zhu and Anran Jiao and Lu Lu and David {van Dijk}},
-keywords = {Scientific machine learning, Operator learning, Partial differential equation, Adaptive step size, Taylor expansion},
-}
+   @article{WU2026115041,
+   title = {TANTE: Time-adaptive operator learning via neural Taylor expansion},
+   journal = {Journal of Computational Physics},
+   volume = {562},
+   pages = {115041},
+   year = {2026},
+   issn = {0021-9991},
+   doi = {https://doi.org/10.1016/j.jcp.2026.115041},
+   url = {https://www.sciencedirect.com/science/article/pii/S0021999126003943},
+   author = {Zhikai Wu and Sifan Wang and Shiyang Zhang and Sizhuang He and Min Zhu and Anran Jiao and Lu Lu and David {van Dijk}},
+   keywords = {Scientific machine learning, Operator learning, Partial differential equation, Adaptive step size, Taylor expansion},
+   }
