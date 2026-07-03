@@ -3,9 +3,9 @@
 
 <p align="center"> <img src="docs/video.gif" width="99%"> </p>
 
-> ***TANTE** is a new operator-learning framework for time-dependent PDEs that uses **neural Taylor expansion** to make accurate, **continuous-time** predictions with **adaptive step sizes**, improving both accuracy and efficiency over fixed-step methods.*
+> ***TANTE** is a new operator-learning framework for time-dependent PDEs that uses **neural Taylor expansion** to make accurate, continuous-time predictions with **adaptive step sizes**, improving both accuracy and efficiency over fixed-step methods.*
 
-This repository contains code accompanying the paper titled [TANTE: Time-Adaptive Operator Learning via Neural Taylor Expansion](https://arxiv.org/abs/2502.08574v3).
+This repository contains code accompanying the paper titled [TANTE: Time-Adaptive Operator Learning via Neural Taylor Expansion](https://www.sciencedirect.com/science/article/pii/S0021999126003943).
 
 ---
 ## 🧱 Pipeline
@@ -71,3 +71,17 @@ python eval.py --config-name=<model_name>
 > Predictions of the target field at $t=4$ time step on the four benchmarks. For each dataset, we show one representative sample comparing our approach with the best performance against several competitive baselines with top accuracy.
 
 <p align="center"> <img src="docs/table.png" width="99%"> </p>
+
+## Citation
+@article{WU2026115041,
+title = {TANTE: Time-adaptive operator learning via neural Taylor expansion},
+journal = {Journal of Computational Physics},
+volume = {562},
+pages = {115041},
+year = {2026},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2026.115041},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999126003943},
+author = {Zhikai Wu and Sifan Wang and Shiyang Zhang and Sizhuang He and Min Zhu and Anran Jiao and Lu Lu and David {van Dijk}},
+keywords = {Scientific machine learning, Operator learning, Partial differential equation, Adaptive step size, Taylor expansion},
+}
